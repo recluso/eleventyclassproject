@@ -1,0 +1,50 @@
+ <!-- Jumbotron -->
+    <style>
+        .carousel-inner img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .card img {
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ jumboImg1 }}" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to My Page</h5>
+                    <p>This is a simple hero unit, a simple jumbotron-style component for showcasing content.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ jumboImg2 }}" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Explore Our Features</h5>
+                    <p>Discover the amazing features we have to offer for your needs.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ jumboImg3 }}" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Join Us Today</h5>
+                    <p>Become a part of our growing community and enjoy exclusive benefits.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
